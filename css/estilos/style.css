@@ -8,3 +8,19 @@ h3 {
     color: green;
     font-size: 30px;
 }
+
+/* classes */
+
+.paragraph {
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/* id */
+
+#exclusive-title {
+    background-color: violet;
+    color: yellow;
+    padding: 5px;
+}

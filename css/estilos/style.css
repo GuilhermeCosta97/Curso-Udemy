@@ -24,3 +24,43 @@ h3 {
     color: yellow;
     padding: 5px;
 }
+
+h2 {
+    border-bottom: solid red;
+}
+
+.titulo {
+    border-bottom: solid blue;
+}
+
+#algum-titulo {
+    border-bottom: solid green;
+}
+
+/* nome de cores */
+.color-name {
+    color: rgb(129, 2, 27);
+}
+
+.hex {
+    color: #56a599;
+}
+
+/* hex simplificado */
+
+.hex-simple {
+    color: #333;
+}
+
+.hex-simple-2 {
+    color: #a5f;
+}
+
+/* rgb */
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+    color: rgb(158, 25, 17);
+}

@@ -64,3 +64,51 @@ h2 {
 .mixed-rgb {
     color: rgb(158, 25, 17);
 }
+
+/* rgba */
+.rgba {
+    color: rgba(199, 100, 50, 0.3);
+}
+
+/* hsl */
+.hsl {
+    color: hsl(200, 60%, 30%);
+    background-color: rgba(20, 20, 30, 0.2);  
+}   
+
+.hsl-2 {
+    color: hsl(100, 50%, 20%);
+}
+
+/* Background-color */ 
+.bg {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bg-2 {
+    background-color: #000;
+    color: #275;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+/* opacidade */
+.opa {
+    color: #000;
+    background-color: #999;
+    opacity: 0.2;
+}
+
+.opa-2 {
+    color: #000;
+    background-color: #999;
+    opacity: 0.8;
+}
+
+/* Rgba com opacidade */
+.rgba-opacidade {
+    color: #000;
+    background-color: rgba(90, 120, 20, 0.2)
+}

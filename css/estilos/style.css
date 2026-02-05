@@ -112,3 +112,23 @@ h2 {
     color: #000;
     background-color: rgba(90, 120, 20, 0.2)
 }
+
+/* bg image */
+.bg-image {
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: #fff;
+}
+
+/* centralizando bg img */ 
+.not-centered-bg,
+.centered-bg {
+    height: 400PX;
+    width: 400PX;
+    background-image: url("../img/bridge.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}

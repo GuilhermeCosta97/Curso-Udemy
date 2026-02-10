@@ -156,3 +156,28 @@ h2 {
     color: #000;
     padding: 20px;
 }
+
+/* paddings individuais */
+.padding-individuais {
+    color: #fff;
+    background-color: #000;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/* shorthands padding */
+.shorthands {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthands-2 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+
+    /* padding: 10px 20px 10px 20px; */
+}

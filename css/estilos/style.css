@@ -181,3 +181,19 @@ h2 {
 
     /* padding: 10px 20px 10px 20px; */
 }
+
+/* padding com width */
+.whithout-border-box {
+    background-color: #444;
+    color: #fff;
+    padding: 50px;
+    width: 400px;
+}
+
+.border-box {
+    background-color: #666;
+    color: #fff;
+    padding: 50px;
+    width: 400px;
+    box-sizing: border-box;
+}

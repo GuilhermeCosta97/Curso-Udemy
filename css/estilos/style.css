@@ -288,3 +288,93 @@ h2 {
 .remove-underline {
     text-decoration: none;
 }
+
+/* text transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* fontes */
+.serif {
+    font-family: Georgia;
+}
+
+.sans-serif {
+    font-family: helvetica;
+}
+
+.monospace {
+    font-style: "Courier New";
+}
+
+.cursive {
+    font-family: Cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* text style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* font weight */
+.thin, .bold, .bolder {
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* font size */
+.small {
+    font-size: 6px;
+}
+
+.big {
+    font-size: 78px;
+}
+
+/* display */
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    display: block;
+    background-color: #444;
+    margin: 10px;
+}
+
+/* escondendo elementos */
+.invisible {
+    display: none;
+}

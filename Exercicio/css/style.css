@@ -1,0 +1,43 @@
+html {
+    font-family: helvetica;
+    background: linear-gradient(to bottom, red, white);
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    margin: 50px auto;
+    max-width: 1100px;
+    padding: 20px 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 40px;
+}
+
+.main-paragraph {
+    font-style: italic;
+}
+
+.imagem-intro {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container-history {
+    border-top: 1px #999 dashed;
+    border-bottom: 1px #999 dashed;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+

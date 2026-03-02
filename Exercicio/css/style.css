@@ -40,4 +40,31 @@ html {
     margin: 20px 0;
 }
 
+.personalizado {
+    text-align: center;
+}
+
+.lista {
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.entrevista {
+    text-align: center;
+}
+
+.img {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.informacoes  {
+    text-decoration: none;
+    background-color: #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    font-style: italic;
+}
 

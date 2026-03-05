@@ -8,11 +8,38 @@
 </head>
 <body>
     <h2>Formularios em HTML</h2>
-    <form>
+    <!-- Primeiro formulario -->
+     <!-- Atributos do formulario -->
+    <form action="register.php" method="get">
         <div>
             <label for="nome">Nome:</label>
             <input type="text">
         </div>
+        <!-- Atributo name -->
+        <!-- Atributo LABEL --> 
+         <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age" >
+         </div>
+         <!-- Select -->
+          <div>
+            <label for="job">Selecione uma profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">Devops</option>
+            </select>
+          </div>
+         <!-- Atributo selected -->
+          <div>
+            <label for="contratct">Você leu os termos do contrato ?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+          </div>
+        <!-- Enviando dados do formulario -->
+         <input type="submit" value="Enviar"> 
     </form>
 </body>
 </html>

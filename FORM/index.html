@@ -38,6 +38,89 @@
                 <option value="nao" selected>Não</option>
             </select>
           </div>
+
+         <!-- Multiplas opções -->
+          <div>
+            <label for="items">
+                <select name="items" multiple>
+                    <option value="arroz">Arroz</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="milho">Milho</option>
+                    <option value="pera">Pera</option>
+                </select>
+            </label>
+          </div>
+          <!-- Textarea -->
+           <div>
+            <label for="coment">Deixe um comentario:</label>
+            <textarea name="coment"></textarea>
+           </div>
+          <!-- Fieldset e legend -->
+           <div>
+            <fieldset>
+                <legend>Preencha as suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="lastname">
+            </fieldset>
+           </div>
+           <!-- Datalist -->
+           <div>
+            <label for="flavor">Escolha uma sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="cereja"></option>
+                <option value="chocolate"></option>
+                <option value="flocos"></option>
+                <option value="morango"></option>
+            </datalist>
+           </div>
+
+           <!-- Input senhas-->
+            <div>
+                <label for="password">Digite sua senha:</label>
+                <input type="password" name="password">
+            </div>
+           <!-- Radio button -->
+            <div>
+                <label for="car_model">Escolha o modelo do seu carro:</label>
+                <div class="radio">
+                    <input type="radio" value="Bmw" name="car_model">
+                    <label for="Bmw">Bmw</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Ferrari" name="car_model">
+                    <label for="Ferrari">Ferrari</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Mercedes" name="car_model">
+                    <label for="Mercedes">Mercedes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" value="Porshe" name="car_model">
+                    <label for="Porshe">Porshe</label>
+                </div>
+            </div>
+            <!-- Checkbox -->
+             <div>
+                <label for="optional">Opicionais de um carro:</label>
+                <div class="radio">
+                    <input type="checkbox" value="big_tiries" name="optiona{}">
+                    <label for="big_tiries">Pneus grandes</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="turbo_engine" name="optiona{}">
+                    <label for="turbo_engine">Motor turbo</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="hybrid" name="optiona{}">
+                    <label for="hybrid">Hibrido</label>
+                </div>
+             </div>   
+        <!-- Resetar form -->
+         <input type="reset" value="limpar">    
         <!-- Enviando dados do formulario -->
          <input type="submit" value="Enviar"> 
     </form>

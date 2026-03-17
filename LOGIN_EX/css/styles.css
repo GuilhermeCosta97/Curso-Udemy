@@ -1,35 +1,53 @@
+/* Reset básico para garantir que padding e bordas não afetem o tamanho final dos elementos */
 * {
     box-sizing: border-box;
 }
 
-
+/* Fundo da página com gradiente diagonal em tons de verde (visual moderno e elegante) */
 html {
     background: linear-gradient(135deg, #1f4037, #99f2c8);
 }
 
+/* 
+Centralização do conteúdo usando Flexbox.
+Também define tipografia global e cor padrão do texto.
+*/
 body {
     margin: 0;
     height: 100vh;
+    padding: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
+/* 
+Container principal do login.
+Utiliza técnica de Glassmorphism (transparência + blur) para efeito moderno.
+Também limita largura para melhor leitura em telas maiores.
+*/
 .container {
-    width: 500px;
+    width: 90%;
+    max-width: 420px;
     padding: 60px 50px;
     border-radius: 15px;
 
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* 
+Estilização dos campos de entrada.
+Visual limpo com leve transparência para combinar com o container.
+*/
 input {
     width: 100%;
     padding: 10px;
@@ -42,10 +60,16 @@ input {
     color: white;
 }
 
+/* Cor do texto placeholder para manter contraste adequado */
 input::placeholder {
     color: #eee;
 }
 
+/* 
+Botão principal de ação (Login).
+Cor verde escura para manter consistência com o tema.
+Inclui transição suave para interação.
+*/
 button {
     width: 100%;
     padding: 12px;
@@ -64,10 +88,15 @@ button {
     transition: 0.3s;
 }
 
+/* Efeito hover para feedback visual ao usuário */
 button:hover {
     background-color: #14473a;
 }
 
+/* 
+Título principal da página.
+Centralizado com leve espaçamento entre letras para estética mais refinada.
+*/
 .title {
     font-weight: 600;
     font-size: 24px;
@@ -75,21 +104,54 @@ button:hover {
     letter-spacing: 1px;
 }
 
+/* 
+Link secundário ("Esqueceu sua senha").
+Estilo discreto para não competir com o botão principal.
+*/
 a {
     display: block;
     text-align: center;
     text-decoration: none;
     margin-top: 15px;
+
     font-size: 14px;
     color: rgba(255, 255, 255, 0.7);
+
     transition: 0.3s;
 }
 
+/* Destaque leve ao passar o mouse */
 a:hover {
     color: #fff;
 }
 
+/* 
+Labels dos inputs.
+Peso mais leve para manter hierarquia visual com o título.
+*/
 label {
     font-weight: 300;
     font-size: 14px;
+}
+
+/* 
+Responsividade para dispositivos móveis.
+Reduz espaçamentos e tamanhos para melhor adaptação em telas pequenas.
+*/
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px;
+    }
 }

@@ -1,0 +1,9 @@
+h1 {
+    color: #122;
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        color: #399;
+    }
+}

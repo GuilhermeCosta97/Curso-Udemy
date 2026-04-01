@@ -69,9 +69,9 @@ nav {
   color: #fff;
 }
 
-/* Main banner */
+/* main banner */
 .main-banner {
-  background-image: url(../img/mainbanner.png);
+  background-image: url("../img/mainbanner.png");
   background-size: cover;
   background-position: center;
   padding: 10rem 0;
@@ -93,18 +93,18 @@ nav {
   font-size: 32px;
 }
 
-/* Services */
-.service-container {
+/* services */
+.services-container {
   padding: 5rem 0;
 }
 
-.service-container ul{
+.services-container ul {
   display: flex;
   width: 90%;
   margin: 0 auto;
 }
 
-.service-container li {
+.services-container li {
   flex: 1 1 200px;
   list-style: none;
   text-align: center;
@@ -112,8 +112,8 @@ nav {
 }
 
 .fas {
-  margin-bottom: 15px;
   font-size: 60px;
+  margin-bottom: 15px;
 }
 
 .fa-shield-alt {
@@ -128,15 +128,15 @@ nav {
   color: #ef8f29;
 }
 
-.service-container h3 {
+.services-container h3 {
   margin-bottom: 25px;
 }
 
-.service-container p {
+.services-container p {
   line-height: 24px;
 }
 
-/* preços e planos */
+/* prices and plans */
 .pricing-container {
   padding-bottom: 5rem;
   text-align: center;
@@ -178,23 +178,23 @@ nav {
 .plan .price {
   width: 120px;
   height: 120px;
-  text-align: center;
   border-radius: 50%;
   background-color: #2cc762;
   color: #fff;
-  position: relative;
+  text-align: center;
+  line-height: 120px;
   margin: 0 auto -50px;
   font-size: 18px;
-  line-height: 120px;
+  position: relative;
 }
 
 .plan .plan-name {
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 20px;
+  font-weight: bold;
   color: #fff;
-  padding: 50px 0;
   background-color: #202b34;
+  padding: 50px 0;
 }
 
 .plan .plan-btn {
@@ -236,23 +236,23 @@ nav {
   margin: 0 auto;
 }
 
-.searchdomain-container input[type= "text"] {
+.searchdomain-container input[type="text"] {
   width: 60%;
   padding: 20px;
   font-size: 20px;
   margin-bottom: 25px;
 }
 
-.searchdomain-container input[type= "submit"] {
-  background-color: #2cc762;
+.searchdomain-container input[type="submit"] {
+  background-color: #2cc76a;
   padding: 15px 30px;
-  cursor: pointer;
   color: #fff;
   font-size: 24px;
+  cursor: pointer;
   opacity: 0.8;
 }
 
-.searchdomain-container input[type= "submit"]:hover {
+.searchdomain-container input[type="submit"]:hover {
   opacity: 1;
 }
 
@@ -276,4 +276,107 @@ nav {
 .contact-container textarea {
   width: 200px;
   padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 0 auto 20px;
+  width: 470px;
+  height: 150px;
+}
+
+.contact-container input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: #2cc76a;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 0 100px;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+
+  .plan {
+    margin: 0 5px;
+  }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+  .main-banner p {
+    padding: 0 6rem;
+  }
+
+  .searchdomain-container {
+    padding: 2rem 4rem;
+  }
+}
+
+/* celular 576px */
+
+@media (max-width: 576px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-items li {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .services-container ul {
+    flex-direction: column;
+  }
+
+  .main-banner {
+    padding: 0rem 2rem;
+  }
+
+  .plans-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .searchdomain-container h2 {
+    font-size: 28px;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0px;
+  }
 }

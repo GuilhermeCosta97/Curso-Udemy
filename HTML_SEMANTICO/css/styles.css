@@ -6,24 +6,45 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+:root {
+    --bg: #fff;
+    --texto: #111;
+    --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb;
+}
+
+[data-tema="escuro"] {
+    --bg: #0b1220;
+    --texto: #e5e7eb;
+    --borda: #1f2937;
+    --caixa: #111827;
+    --acao: #38bdf8;
+}
+
+html, body {
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #444;
+    color:  var(--texto);
     transition: 0.4s;
 }
 
 a:hover {
-    color: #37a1f7; 
+    color: var(--acao); 
 }
 
 /* Navbar */
 #navbar {
     padding: 1.5rem 2.5rem;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid    var(--borda);
 }
 
 #navbar-inner {
@@ -37,6 +58,17 @@ a:hover {
 #nav-links {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    padding: .6rem .9rem;
+    border: 1px solid var(--borda);
+    background-color: var(--bg);
+    color: var(--texto);
+    border-radius: .5rem;
+    cursor: pointer;
+    max-width: 200px;
 }
 
 /* conteudo principal */
@@ -72,7 +104,7 @@ a:hover {
 }
 
 .author {
-    color: #333;
+    color: var(--texto);
     font-weight: bold;
 }
 
@@ -86,7 +118,7 @@ a:hover {
 #tags {
     padding: 1.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #333;
+    border: 1px solid   var(--borda);
 }
 
 #search-bar h4,
@@ -102,12 +134,12 @@ a:hover {
 
 #search-bar input {
     padding: 0.5rem 1rem; 
-    border: 1px solid #ddd;
+    border: 1px solid var(--borda);
 }
 
 #search-bar input[type= "submit"] {
     cursor: pointer;
-    background-color: #37a1f7;
+    background-color: var(--acao);
     color: #fff;
     border: none;
 }
@@ -123,13 +155,13 @@ a:hover {
 }
 
 #tags-container a {
-    background-color: #ddd;
+    background-color: var(--caixa);
     padding: 0.7rem 0.5rem;
     border-radius: 0.5rem;
 }
 
 footer {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--borda);
     text-align: center;
     padding: 3rem;
 }
@@ -142,6 +174,12 @@ footer {
 /* Responsivo */
 @media(max-width: 450px) {
     .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 430px) {
+    #navbar-inner {
         flex-wrap: wrap;
     }
 }
